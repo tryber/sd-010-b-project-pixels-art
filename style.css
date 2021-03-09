@@ -1,21 +1,23 @@
 .color {
-    display: inline-block;
-    border: 5px solid;
-    width: 50px;
-    height: 50px;
-    margin-right: 5px;
+  display: inline-block;
+  border: 1px solid;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
 }
 
-#board-content{
-    margin: 0;
-    padding: 0;
-    border-spacing: 0px;
+#board-content {
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+  border-spacing: 0px;
+  border-collapse: collapse;
 }
 
-.pixel{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid;
-    background-color: white;
+.pixel {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  background-color: white;
 }

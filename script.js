@@ -1,25 +1,31 @@
-const colors = ["black", "red", "green", "cyan", "orange"];
-console.log(colors);
+window.onload = function() { 
+  let colorP = selector('.color-black')
+  sessionStorage.selected = colorP.style.backgroundColor
+  colorP.className += ' selected'
 
+};
+// Functions helper
+let selector = (id) => {return document.querySelector(id)}
+let selectorAll = (id) => {return document.querySelectorAll(id)}
+// Constants
+const colors = ["black", "red", "blue", "green"];
+// Create Paleta
 let createColor = (colors) => {
-  let seletor = document.querySelector("#color-palette");
   colors.map((element) => {
     let color = element;
     element = document.createElement("div");
-    seletor.appendChild(element);
-    element.className = `color ${color}`;
+    selector("#color-palette").appendChild(element);
+    element.className = `color color-${color}`;
     element.style.backgroundColor = color;
   });
 };
-createColor(colors);
-
+// Create pixels
 const numberFrame = 5;
 let createLinesFrame = (number) => {
-  let seletor = document.querySelector("#board-content");
   let lineNumb = 1;
   for(indexLine = 1; indexLine <= number; indexLine++) {
     let indexLine = document.createElement('tr')
-    seletor.appendChild(indexLine).className = `board-line-${lineNumb}`;
+    selector("#board-content").appendChild(indexLine).className = `board-line-${lineNumb}`;
     for(indexContent = 1; indexContent <= number; indexContent++) {
       let indexContent = document.createElement('td')
       indexLine.appendChild(indexContent).className = `pixel`;
@@ -27,5 +33,5 @@ let createLinesFrame = (number) => {
     lineNumb += 1;
   }
 };
+createColor(colors);
 createLinesFrame(5)
-
