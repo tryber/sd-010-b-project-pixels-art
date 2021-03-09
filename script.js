@@ -69,7 +69,7 @@ for (pixel of selectorAll('.pixel')) {
 // Create button
 let createButton = (name) => {
   let button = document.createElement('button');
-  selector('#clear').appendChild(button).id = 'clear-board'
+  selector('#inputs').appendChild(button).id = 'clear-board'
   button.innerText = name;
   button.addEventListener('click', clear => {
     for(pixel of selectorAll('.pixel')) {
