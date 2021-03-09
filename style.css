@@ -21,3 +21,8 @@
   border: 1px solid;
   background-color: white;
 }
+
+#clear-board {
+    width: 200px;
+    margin: 10px;
+}
