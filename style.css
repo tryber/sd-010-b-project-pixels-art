@@ -1,0 +1,29 @@
+body {
+	text-align: center;
+}
+
+#color-palette div {
+  border: solid 1px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+#pixel-board .pixel {
+  border: solid 1px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+	margin-left: 5px;
+  background-color: white;
+}
+
+#clear-board {
+  height: 30px;
+  width: 80px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: monospace;
+}
