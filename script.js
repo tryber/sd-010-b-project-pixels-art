@@ -1,5 +1,5 @@
-window.onload = function () {
-  let colorP = selector('.color-black');
+window.onload = () => {
+  const colorP = selector('.color-black');
   colorP.className += ' selected';
   sessionStorage.selected = colorP.style.backgroundColor;
 };
@@ -23,7 +23,6 @@ let createColor = (colors) => {
   });
 };
 // Create pixels
-const numberFrame = 5;
 let createLinesFrame = (number) => {
   let lineNumb = 1;
   for (indexLine = 1; indexLine <= number; indexLine++) {
@@ -59,23 +58,52 @@ let swapColor = (elem) => {
   sessionStorage.selected = elem.style.backgroundColor;
 };
 // Paint Pixel
-for (pixel of selectorAll('.pixel')) {
-  pixel.addEventListener('click', (check) => {
-    check = check.target;
-    check.style.backgroundColor = sessionStorage.selected;
-    console.log(check);
-  });
-}
+let paintPixel = () => {
+  for (pixel of selectorAll('.pixel')) {
+    pixel.addEventListener('click', (check) => {
+      check = check.target;
+      check.style.backgroundColor = sessionStorage.selected;
+    });
+  }
+};
+paintPixel();
 // Create button
 let createButton = (name) => {
   let button = document.createElement('button');
-  selector('#inputs').appendChild(button).id = 'clear-board'
+  selector('#inputs').appendChild(button).id = 'clear-board';
   button.innerText = name;
-  button.addEventListener('click', clear => {
-    for(pixel of selectorAll('.pixel')) {
+  button.addEventListener('click', (clear) => {
+    for (pixel of selectorAll('.pixel')) {
       pixel.style.backgroundColor = 'white';
     }
-  })
-}
-
-createButton('Limpar')
+  });
+};
+createButton('Limpar');
+// Create input,button define max frame
+let createInputDefine = (name) => {
+  let input = document.createElement('input');
+  let button = document.createElement('button');
+  selector('#inputs').appendChild(input).id = 'board-size';
+  selector('#inputs').appendChild(button).id = 'generate-board';
+  button.innerText = name;
+  button.addEventListener('click', configBoardButton);
+};
+let configBoardButton = (elem) => {
+  let targetElem = selector('#board-size');
+  let numb = parseInt(targetElem.value);
+  if (targetElem.value == '') alert('Board inválido!');
+  if (numb >= 5 && numb <= 50) {
+    for(pixel of selectorAll('tr')) {
+      pixel.parentNode.removeChild(pixel)
+    }
+    createLinesFrame(targetElem.value);
+    paintPixel();
+  } else if (numb > 50){
+    for(pixel of selectorAll('tr')) {
+      pixel.parentNode.removeChild(pixel)
+    }
+    createLinesFrame(50);
+    paintPixel();
+  }
+};
+createInputDefine('VQV');
