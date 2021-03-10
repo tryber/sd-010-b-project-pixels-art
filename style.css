@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+#title {
+  margin: 2vh 0;
+}
+
+#color-palette {
+  display: inline-block;
+  width: 400px;
+  cursor: pointer;
+}
+
+.color {
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.input-container {
+  margin: 40px auto 0;
+}
+
+.input-container div , button , input {
+  display: inline-block;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#board-size {
+  width: 50px;
+  height: 20px;
+  font-size: 1em;
+  margin-left: 60px;
+}
+
+#generate-board {
+  font-size: 0.8;
+}
+
+
+#pixel-board {
+  padding-top: 40px;
+  margin: auto;
+  border-spacing: 0;
+}
+
+/* height: 38px;
+width: 39px; */
+
+.pixel {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* tr .pixel:first-child {
+  height: 38px;
+  width: 38px;
+} */
