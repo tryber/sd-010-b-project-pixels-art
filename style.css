@@ -1,0 +1,41 @@
+#title {
+  color: #454545;
+}
+
+#color-palette {
+  display: flex;
+}
+
+.color {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+#pixel-board {
+  margin: 20px 0px 20px 0px;
+  display: flex inline;
+  border: 1px solid black;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.btn {
+  width: 100px;
+  font-size: 0.75em;
+  color: #454545;
+  margin: 10px 10px 10px 10px;
+}
+
+#buttons-container {
+  display: flex;
+  padding: 5px 0px 5px 0px;
+}
