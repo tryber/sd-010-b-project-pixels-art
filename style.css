@@ -1,0 +1,50 @@
+.color {
+  display: inline-block;
+  border: black solid 1px;
+  width: 40px;
+  height: 40px;
+}
+
+#black {
+  background-color: black;
+}
+
+#greenyellow {
+  background-color: greenyellow;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#orangered {
+  background-color: orangered;
+}
+
+/* #pixel-board {
+  background-color: white;
+} */
+
+.pixel {
+  border: black solid 1px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.greenyellow {
+  background-color: greenyellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orangered {
+  background-color: orangered;
+}
+
