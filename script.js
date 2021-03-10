@@ -11,7 +11,7 @@ let selectorAll = (id) => {
   return document.querySelectorAll(id);
 };
 // Constants
-const colors = ['black', 'red', 'blue', 'green'];
+const colors = ['black', 'red', 'blue', 'green', 'cyan', 'purple', 'yellow', 'coral'];
 // Create Paleta
 let createColor = (colors) => {
   colors.map((element) => {
@@ -87,6 +87,9 @@ let createInputDefine = (name) => {
   selector('#inputs').appendChild(button).id = 'generate-board';
   button.innerText = name;
   button.addEventListener('click', configBoardButton);
+  input.addEventListener('keyup', check => {
+    if(parseInt(check.target.value) <= 0 ) check.target.value = ''
+  });
 };
 let configBoardButton = (elem) => {
   let targetElem = selector('#board-size');
@@ -107,3 +110,13 @@ let configBoardButton = (elem) => {
   }
 };
 createInputDefine('VQV');
+// Create random colors
+let randColor = (colors) => {
+  let newArray = [];
+  newArray.push('black')
+  for(index = 1; index <= 3; index++) {
+    // newArray.push(colors[Math.random() * color.length])
+    console.log(colors[Math.random() * color.length])
+  }
+
+}
