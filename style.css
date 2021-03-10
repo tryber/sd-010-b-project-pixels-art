@@ -1,0 +1,52 @@
+#color-palette div {
+  display: inline-block;
+  border: 1px black solid;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+#botao , #board-size , #entrada {
+display: inline-block;
+width: auto;
+
+}
+
+#configure{
+  display: inline;
+  background-color: white;
+
+}
+
+
+#pixel-board{
+  margin-top: 20px;
+  grid-auto-rows: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 210px;
+
+
+}
+
+.pixel {
+  display: inline-block;
+  background-color: white;
+  border: 1px black solid;
+  height: 40px;
+  width:  40px;
+
+}
+
+.black{
+  background-color:black
+}
+
+.red{
+  background-color:red
+}
+
+.purple{
+  background-color:purple
+}
+.green{
+  background-color :green
+}

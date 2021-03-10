@@ -137,7 +137,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
   4. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
   5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  
+
 ---
 
 # Como desenvolver
@@ -239,7 +239,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ### 2 - Adicione à página uma paleta de quatro cores distintas.
 
-- A paleta de cores deve ser um elemento com `id` denominado `color-palette`, ao passo que cada cor individual da paleta de cores deve possuir a `classe` `color`;
+- A paleta de cores deve ser um elemento com `id` denominado `colorclass="color"-palette`, ao passo que cada cor individual da paleta de cores deve possuir a `classe` `color`;
 
 - A cor de fundo de cada elemento da paleta deverá ser a cor que o elemento representa. **A única cor não permitida na paleta é a cor branca.**;
 
@@ -271,7 +271,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 - Verifica se a primeira cor da paleta é preta
 
-- Verifica se as demais cores podem ser escolhidas livremente.
+- Verifica se as demais cores podem ser escolhidas livremente.   //deve ser fazer fazer
 
 ### 4 - Adicione à página um quadro de pixels, com 25 pixels.
 
@@ -279,7 +279,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 - O quadro de "pixels" deve possuir o `id` denominado `pixel-board`, ao passo que cada "pixel" individual dentro do quadro deve possuir a `classe` denominada `pixel`;
 
-- A cor inicial dos "pixels" dentro do quadro, ao abrir a página, deve ser branca;
+- A cor inicial dos "pixels" dentro do quadro, ao abrir a página, deve ser branca;  //deve ser fazer fazer
 
 -  O quadro de "pixels" deve aparecer abaixo da paleta de cores.
 
@@ -289,7 +289,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 - Verifica se cada pixel individual dentro do quadro possui a `classe` denominada `pixel`.
 
-- Verifica se a cor inicial dos pixels dentro do quadro, ao abrir a página, é branca.
+- Verifica se a cor inicial dos pixels dentro do quadro, ao abrir a página, é branca. //deve ser fazer fazer
 
 - Verifica se o quadro de pixels aparece abaixo da paleta de cores
 
@@ -299,9 +299,9 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 - Verifica se o quadro de pixels tem altura e comprimento de 5 elementos
 
-- Verifica se 40 pixels é o tamanho total do elemento, incluindo seu conteúdo e excluindo a borda preta, que deve ser criada à parte.
+- Verifica se 40 pixels é o tamanho total do elemento, incluindo seu conteúdo e excluindo a borda preta, que deve ser criada à parte.   //deve ser fazer fazer
 
-### 6 - Defina a cor preta como cor inicial. Ao carregar a página, a cor preta já deve estar selecionada para pintar os pixels
+### 6 - Defina a cor preta como cor inicial. Ao carregar a página, a cor preta já deve estar selecionada para pintar os pixels   //deve ser fazer fazer
 
 - O elemento da cor preta deve possuir, inicialmente, a `classe` `selected`;
 
@@ -315,9 +315,10 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ### 7 - Clicar em uma das cores da paleta faz com que ela seja selecionada e utilizada para preencher os pixels no quadro.
 
-- A `classe` `selected` deve ser adicionada à cor selecionada na paleta, ao mesmo tempo em que é removida da cor anteriormente selecionada;
+- A `classe` `selected` deve ser adicionada à cor selecionada na paleta, ao mesmo tempo em que é removida da cor anteriormente selecionada;  // a fazer fazer
 
-- Somente uma das cores da paleta deve ter a `classe` `selected` de cada vez;
+- Somente uma das cores da paleta deve ter a `classe` `selected` de cada vez;   // a fazer fazer
+
 
 - Note que os elementos que deverão receber a classe `selected` devem ser os mesmos elementos que possuem a classe `color`, como especificado no **requisito 2**.
 
@@ -449,3 +450,4 @@ Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/3ta7hA0)
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
 ---
+bora codar
