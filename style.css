@@ -1,0 +1,24 @@
+.color , .selected {
+  border: 1px black solid;
+  width: 80px;
+  height: 40px;
+  display: inline-block
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.pixel {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: white;
+}
+
+#pixel-board {
+  display: table;
+  width: 220px;
+  height: 120px;
+}
