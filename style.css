@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+}
+
+/* ------------------------------------ */
+
+/* TITLE */
+#title {
+  text-align: center;
+  margin: 20px;
+}
+
+/* ------------------------------------ */
+
+/* COLOR-PALETTE */
+#color-palette {
+  align-self: center;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  margin: 20px 8px;
+}
+
+.black {
+  background-color: black;
+}
+
+/* ------------------------------------ */
+
+/* PIXEL BOARD */
+#pixel-board {
+  display: table;
+  border: 1px black solid;
+  width: auto;
+  height: auto;
+  margin: 30px auto;
+}
+
+.row {
+  display: table-row;
+}
+
+.pixel {
+  display: table-cell;
+  border: black 1px solid;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+}
+
+/* ------------------------------------ */
+
+/* CLEAR BUTTON */
+#clear-board {
+  display: block;
+  margin: 30px auto;
+}
+
+/* ------------------------------------ */
+
+/* INPUT AND BUTTON */
+#input {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  margin: 15px auto;
+}
