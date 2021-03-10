@@ -1,0 +1,51 @@
+body {
+  padding: 10px;
+  background-color: rgb(181, 182, 182);
+}
+
+h1 {
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.color {
+  border: black solid 1px;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.pixel {
+  border: black solid 1px;
+  height: 40px;
+  width: 40px;
+  display: table-cell;
+  background-color: white;
+}
+
+.linha {
+  display: table-row;
+}
+
+#color-palette {
+  width: fit-content;
+  padding-bottom: 30px;
+}
+
+#pixel-board {
+  display: table;
+  margin-left: 68px;
+  margin-top: 40px;
+}
+
+#button-cleaner {
+  margin-left: 65px;
+}
+
+input {
+  margin-left: 65px;
+  margin-right: 5px;
+  width: 45px;
+}
