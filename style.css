@@ -1,0 +1,17 @@
+.color {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.pixel {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+}
+
+#clear-board {
+  width: 182px;
+  margin-left: 2px;
+}
