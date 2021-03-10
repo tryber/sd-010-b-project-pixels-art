@@ -1,0 +1,39 @@
+#color-palette {
+  display: table;
+  /* border-spacing: 1px; */
+  /* background-color: black; */
+  /* border: 1px solid black; */
+}
+
+.color{
+  display: table-cell;
+  /* background-color: white; */
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+/* #blackBox {
+  background-color: black;
+}
+#blueBox {
+  background-color: blue;
+}
+#redBox {
+  background-color: red;
+}
+#greenBox {
+  background-color: green;
+} */
+
+.pixel{
+  display: table-cell;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+
+
+
