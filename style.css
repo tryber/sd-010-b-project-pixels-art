@@ -1,0 +1,32 @@
+.color {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+.pixel {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: white;
+}
+
+#pixel-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+  height: 210px;
+  margin-top: 10px;
+}
+
+#color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  width: 168px;
+}
+
+#clear-board {
+  display: inline-block;
+}
