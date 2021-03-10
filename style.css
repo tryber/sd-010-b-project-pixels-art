@@ -1,0 +1,50 @@
+body {
+  background-color: whitesmoke;
+}
+
+#color-palette {
+  display: table;
+  margin: auto;
+}
+
+.color {
+  display: table-cell;
+  padding: 25px;
+  width: 40px;
+  border: black solid 1px;
+}
+
+
+
+#firstColor {
+  background-color: black;
+}
+
+#secondColor {
+  background-color: aqua;
+}
+
+#thirdColor {
+  background-color: blueviolet;
+}
+
+#fourthColor {
+  background-color: chartreuse;
+}
+
+.tr {
+  display: table-row;
+}
+
+.pixel {
+  display: table-cell;
+  height: 40px;
+  width: 40px;
+  border: black solid 1px;
+  background-color: white;
+}
+
+#pixel-board {
+  padding-top: 100px;
+  padding-left: 560px;
+}
