@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+}
+
+#color-palette {
+  margin: 70px auto;
+}
+
+.color {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+#clear-board {
+  margin: 40px auto 10px;
+  display: block;
+
+}
+
+#pixel-board {
+  display: table;
+  margin: auto;
+}
+
+.pixel-line {
+  display: table-row;
+}
+
+.pixel {
+  display: table-cell;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
