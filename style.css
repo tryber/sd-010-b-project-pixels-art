@@ -1,0 +1,42 @@
+table {
+  display: table;
+}
+
+tr {
+  display: table-row;
+}
+
+.pixel {
+  border: 1px solid black;
+}
+
+td {
+  display: table-cell;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+#title {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#color-palette div {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#clear-board {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+#board-size {
+  width: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
