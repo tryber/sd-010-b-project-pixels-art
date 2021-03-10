@@ -1,0 +1,29 @@
+#pixel-board , #color-palette {
+  display: inline-block;
+  font-size: 0;
+}
+
+#pixel-board {
+  width: 210px;
+
+  /* border: 1px solid black; */
+}
+
+.pixel , .color {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.pixel {
+  background-color: white;
+}
+
+.color {
+  margin-right: 4px;
+}
+
+#clear-board {
+  font-weight: 700;
+}
