@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+
+</head>
+<body>
+  <header>
+    <h1 id = title>Paleta de Cores</h1>
+      
+  </header>
+  <section>
+
+
+    
+    <div id = color-palette>
+      <h3>Cores fixas</h4>
+      <span class = 'color selected' id = black></span>
+      <span class = color id = blue></span>
+      <span class = color id = yellow></span>
+      <span class = color id = red></span>
+    </div>
+    
+    
+    <div id = seilah>
+      <h3>Cores aleatorias</h4>
+      <div id = coresAleatorias>
+        <span class = color id = cor1></span>
+        <span class = color id = cor2></span>
+        <span class = color id = cor3></span>
+        <span class = color id = cor4></span>
+
+      </div>
+    </div>
+    <div><button id = gerar>Random</button></div>
+
+
+  </section>
+  <h3>Tamanho da Pixel Arte</h4>
+  <div>Escolha um tamanho entre 5 e 50 blocos</div>
+  <div id = valor-atual></div>
+  <span class="flexy-s">
+    <input type="text" id = board-size min = 0 class="caixa-texto" placeholder="Escolha um valor entre 5 e 50">
+  </span>
+   <button id = generate-board>VQV</button>
+   <div><button id = clear-board>Limpar</button></div>
+  <section id = pixel-board>
+
+  </section>
+  <footer></footer>
+  <script src="script.js"></script>
+</body>
+</html>

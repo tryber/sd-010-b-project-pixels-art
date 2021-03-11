@@ -1,0 +1,39 @@
+.color {
+  border: 1px solid black;
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+#seilah {
+  display: inline-block;
+}
+
+#color-palette {
+  display: inline-block;
+}
+
+#black {
+  background: black;
+}
+
+#blue {
+  background: blue;
+}
+
+#red {
+  background: red;
+}
+
+#yellow {
+  background: yellow;
+}
