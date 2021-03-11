@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: auto;
+  background-image: url('images/art-pencil-color-school-education-isolated-1588939-pxhere.com.jpg');
+  background-position: 30% 45%;
+  background-size: cover;
+  font-family: monospace;
+}
+
+header {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 900;
+  padding-top: 25px;
+  text-align: center;
+  color: white;
+}
+
+#color-palette {
+  text-align: center;
+  margin-top: 350px;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border: black solid 1px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+#pixel-board {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.pixel-row {
+  height: 40px;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: black solid 1px;
+  display: inline-block;
+  background-color: white;
+
+}
+
+.selected {
+  width: 40px;
+  height: 40px;
+  border: black solid 1px;
+  display: inline-block;
+  margin: 10px;
+}
+
+#div-botao {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#clear-board {
+  text-align: center;
+  width: 200px;
+
+}
+
+#board-size {
+  width: 40px;
+}
