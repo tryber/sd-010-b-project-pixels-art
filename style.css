@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+}
+
+/* width e height com 41px, pois há um border-collapse que "come" 1px */
+.color , .pixel {
+  border: 1px solid black;
+  width: 41px;
+  height: 41px;
+  min-width: 41px;
+}
+
+.color1 {
+  background-color: black;
+}
+
+.color2 {
+  background-color: purple;
+}
+
+.color3 {
+  background-color: mediumspringgreen;
+}
+
+.color4 {
+  background-color: orange;
+}
+
+#pixel-board td {
+  background-color: white;
+}
+
+section {
+  text-align: center;
+}
+
+#clear-board , #generate-board , #board-size {
+  margin: 0 5px 10px;
+}
+
+#board-size {
+  width: 50px;
+}
