@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paleta de Cores</title>
+</head>
+
+<body>
+    <h1 id='title'>Paleta de Cores</h1>
+
+    <input id="input-second" class="input-colors" type="color" value="#ed4e23">
+
+    <input id="input-third" class="input-colors" type="color" value="#3970fe">
+
+    <input id="input-fourth" class="input-colors" type="color" value="#438104">
+
+    <div id='color-palette'>
+        <span id='primary-color' class='color selected'></span>
+
+        <span id='second-color' class='color'></span>
+
+        <span id='third-color' class='color'></span>
+
+        <span id='fourth-color' class='color'></span>
+    </div>
+
+    <label for="board-size">Defina um tamanho para o quadro de pixels: </label>
+    <input type="number" id="board-size" min='1'>
+    <button id="generate-board">VQV</button> <br>
+    <button id="clear-board">Limpar</button>
+
+    <div id="pixel-board"></div>
+
+    <script type='text/javascript' src='script.js'></script>
+</body>
+
+</html>
