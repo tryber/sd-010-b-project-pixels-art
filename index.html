@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Project Pixels Art</title>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Paleta de Cores</h1>
+
+
+
+    <section id="color-palette">
+        <div id="blackBox" class="color black selected"> </div>
+        <div id="blueBox" class="color blue "> </div>
+        <div id="pinkBox" class="color pink"> </div>
+        <div id="redBox" class="color red"> </div>
+    </section>
+
+    <button id="clear-board" onclick="clearBoard()"> Limpar</button>
+
+    <label for="name">Tamanho da Board:</label>
+    <input type="number" id="board-size" min="5" max="50" >
+    <button id="generate-board" onclick="creatPixelBoard()"> Criar Board</button>
+
+
+    <section id="pixel-board"></section>
+
+   
+    <script src="/script.js"></script>
+</body>
+
+</html>

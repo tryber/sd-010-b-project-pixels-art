@@ -1,0 +1,47 @@
+#title {
+  text-align: center;
+}
+
+#color-palette {
+  border: 1px solid black;
+  width: 190px;
+  padding: 30px;
+  text-align: center;
+}
+
+.color {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+#pixel-board {
+  padding-top: 25px;
+  padding-left: 20px;
+  display: table;
+}
+
+.pixel {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: white;
+}
