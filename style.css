@@ -1,0 +1,28 @@
+#color-palette {
+  max-height: 102px;
+  max-width: 408px;
+}
+
+#paletteTwo {
+  background-color: #f4d06f;
+}
+
+#paletteThree {
+  background-color: #c44900;
+}
+
+#paletteFour {
+  background-color: #9dd9d2;
+}
+
+.color {
+  border: black solid 1px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.inlineDivs {
+  max-height: 40px;
+  max-width: fit-content;
+}
