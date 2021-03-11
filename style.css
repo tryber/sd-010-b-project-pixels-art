@@ -1,0 +1,47 @@
+.color  {
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#pixel-board{
+    width: 212px;
+    height: 233px;
+    background-color: olivedrab;
+
+}
+
+.pixel{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 1px;    
+    background-color: white;
+}
+
+#generate-board{
+    width: 40px;
+    height: 16px;
+    font-size: 6px;
+    vertical-align: bottom;
+    margin-left: 3px;
+}
+
+#board-size{
+    width: 70px;
+    height: 10px;
+}
+
+#clear-board{
+    width: 40px;
+    height: 14px;
+    font-size: 6px;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 8px;
+}
+
