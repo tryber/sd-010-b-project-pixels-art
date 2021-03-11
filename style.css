@@ -1,0 +1,24 @@
+#color-palette div {
+  display: inline-block;
+  border: 1px black solid;
+  padding: 30px;
+}
+/* Explica o que é o display table https://pt.stackoverflow.com/questions/401545/qual-o-uso-apropriado-do-display-table#: */
+#pixel-board {
+  display: table;
+  border: 1px black solid;
+}
+#pixel-board div {
+  display: table-row;
+  padding: 10px;
+}
+#pixel-board div .pixel {
+  display: table-cell;
+  background-color: white;
+  border: 1px black solid;
+  height: 40px;
+  width: 40px;
+}
+#clear-board {
+  margin: 10px;
+}
