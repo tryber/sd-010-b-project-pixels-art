@@ -1,0 +1,55 @@
+#color-palette {
+  width: 190px;
+  height: 40px;
+  border: 1px solid #ececc8;
+  display: inline-block;
+  flex-direction: row-reverse;
+}
+
+#color-palette div {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.color {
+  margin-inline: 1px 1px;
+  border: 1px solid black;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
+#black {
+  background-color: black;
+}
+
+#clear-board {
+  display: block;
+}
+
+#pixel-board {
+  width: 210px;
+  height: 210px;
+  border: 1px solid;
+  display: block;
+  flex-direction: row-reverse;
+}
+
+.pixel {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  float: left;
+  border: 1px solid black;
+}
