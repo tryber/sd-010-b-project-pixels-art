@@ -1,0 +1,72 @@
+body {
+  background-image: url('/background-image.png');
+  font-family: cursive;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 15px 0;
+  text-align: center;
+}
+
+#color-palette {
+  text-align: center;
+  margin: 25px 0;
+}
+
+#color-palette div {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 70px;
+  margin: 25px 10px;
+  width: 70px;
+}
+
+.buttons-container {
+  text-align: center;
+}
+
+.paragraph {
+  display: inline;
+  font-size: 20px;
+}
+
+#board-size {
+  margin: 10px;
+  padding-top: 10px;
+  width: 50px;
+}
+
+#generate-board {
+  background-color: black;
+  border-radius: 40%;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+#clear-board {
+  background-color: black;
+  border-radius: 40%;
+  color: white;
+  display: block;
+  font-size: 20px;
+  margin: 15px auto;
+  padding: 5px 10px;
+}
+
+#pixel-board {
+  border: 1px solid black;
+  border-spacing: 0;
+  margin: 15px auto;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}

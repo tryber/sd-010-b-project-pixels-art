@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pixels Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Paleta de Cores</h1>
+    </header>
+
+    <main>
+      <section id="color-palette">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </section>
+
+      <div class="buttons-container">
+        <p class="paragraph">Tamanho do quadro de pixels:</p>
+        <input id="board-size" type="number" min="1" pattern='\d+' placeholder="5 até 50">
+        <button id="generate-board">VQV</button>
+        <button id="clear-board">Limpar</button>
+      </div>
+
+      <section id="frame-section">
+        <table id="pixel-board">
+          <tbody id="table-body">
+            <tr class="line">
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+            </tr>
+            <tr class="line">
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+            </tr>
+            <tr class="line">
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+            </tr>
+            <tr class="line">
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+            </tr>
+            <tr class="line">
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+              <td class="pixel"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
