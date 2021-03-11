@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box;
+}
+
+.pixel {
+
+  border: solid black 1px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+
+}
+
+.color {
+  border: solid black 1px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
