@@ -1,0 +1,52 @@
+/* Starting */
+
+body {
+  background-color: lightblue;
+}
+
+#title {
+  text-align: center;
+}
+
+#color-palette {
+  text-align: center;
+}
+
+.color {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border: solid black 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#pixel-board {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pixel {
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  border: solid black 1px;
+  border-spacing: 0px;
+  padding: 0px;
+}
+
+#button-align {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#input-align {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 20px;
+}
