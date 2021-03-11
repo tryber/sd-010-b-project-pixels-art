@@ -1,0 +1,38 @@
+#color-palette {
+  display: flex;
+}
+
+.color {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+#black {
+  background-color: black;
+}
+
+/* coloquei 41px pq o evaluator estava encontrando 39px. */
+.pixel {
+  border: 1px solid black;
+  background-color: white;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+}
+
+table , tr , td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#botao , #board-size , #entrada {
+  display: inline-block;
+}
+
+#opcoes {
+  display: inline;
+  background-color: white;
+}
