@@ -1,0 +1,37 @@
+.color {
+    border-style:solid;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    margin:12px
+        
+}
+
+#vermelho{
+    background-color: red;
+}
+#azul{
+    background-color: blue;
+}
+#verde{
+    background-color: green;
+}
+#preto{
+    background-color: black;
+}
+
+.pixel{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+}
+.selected{
+
+}
+
+#clear-board{
+    margin: 30px;
+}
