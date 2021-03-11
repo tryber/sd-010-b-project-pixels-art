@@ -1,0 +1,86 @@
+* {
+  font-family: fantasy;
+}
+
+h1 {
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.color-palette {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+section > .color-palette {
+  margin-bottom: 5px;
+}
+
+.color {
+  border: solid 1px;
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+}
+
+.section-pixel-board {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.pixel-board {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+.pixel { 
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  border: solid black 1px;
+  height: 40px;
+  width: 40px;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.boardline {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  margin: 20px ;
+}
+ 
+.clear-board {
+  margin-left: 20px;
+  margin-top: 20px;
+  
+  
+}
