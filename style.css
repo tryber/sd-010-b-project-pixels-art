@@ -1,0 +1,63 @@
+#title{
+    margin-left: 60px;
+}
+
+.color{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border: solid #000;
+    border-width: 1px;
+    /* sources: https://stackoverflow.com/questions/5937148/css-border-not-working/5937570
+    https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-block-4e6cba2f19d4 */
+}
+
+#color-palette{
+
+}
+
+.paleta-container{
+/* color: rgb(2, green, blue); */
+}
+
+.pixel{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: solid #000;
+    border-width: 1px;
+    margin-right: 0px;
+}
+
+#pixel-board{
+    margin-left: 60px;
+}
+
+.table-row{
+    height: 42px;
+}
+
+#clear-board{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50px;
+    border: solid 1px black;
+    background-color: rgb(230, 230, 230);
+    display: inline-block;
+}
+
+input{
+    display: inline-block;
+    width: 40px;
+    margin-left: 170px;
+}
+
+#generate-board{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50px;
+    border: solid 1px black;
+    background-color: rgb(230, 230, 230);
+    display: inline-block;
+}
