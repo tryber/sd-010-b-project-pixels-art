@@ -1,0 +1,44 @@
+
+.color {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    margin-left: 1%; 
+}
+
+#pixel-board{ 
+    display: table; 
+    border: solid;
+    border-width: 1px;
+    margin-top: 2%;
+    margin-left: 1%; 
+   
+}
+.tr{ 
+    display: table-row; 
+
+}
+.pixel{ 
+    display: table-cell;
+    border: solid; 
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+#clear-board, #amazon-app{
+    margin-top: 2%;
+    margin-left: 1%; 
+}
+
+.color:hover{
+    width: 50px;
+    height: 50px;
+}
+
+#board-size{
+    width: 6%;
+    margin-left: 1%;
+}
