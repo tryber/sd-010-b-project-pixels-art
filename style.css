@@ -1,0 +1,42 @@
+#color-palette {
+  display: table;
+}
+
+.color {
+
+  /* consultei o stack overflow para usar o valor table-cell em display
+  link:
+  https://stackoverflow.com/questions/29229523/how-and-why-to-use-display-table-cell-css
+  */
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  height: 50px;
+  width: 50px;
+  display: table-cell;
+}
+
+#pixel-board {
+  display: table;
+}
+
+.board-tr {
+  display: table-row;
+}
+
+.pixel {
+  display: table-cell;
+  height: 40px;
+  width: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+#clear-board {
+  margin-left: 120px;
+}
+
+button {
+  margin: 10px;
+}
