@@ -1,0 +1,49 @@
+h1 {
+  margin-left: 42px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  border: black solid 1px;
+  width: 60px;
+  height: 60px;
+
+}
+
+li:nth-child(1) {
+  background-color: black;
+  margin-left: 5px;
+}
+
+li:nth-child(2) {
+  background-color: red;
+  margin-left: 8px;
+}
+
+li:nth-child(3) {
+  background-color: slateblue;
+  margin-left: 8px;
+}
+
+li:nth-child(4) {
+  background-color: pink;
+  margin-left: 8px;
+}
+
+table {
+  margin-left: 44px;
+}
+
+.pixel {
+  border: black solid 1px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: white;
+
+  border: 1px solid black
+}
