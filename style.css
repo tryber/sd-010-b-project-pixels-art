@@ -1,0 +1,25 @@
+.color, .pixel {
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.pixel {
+  background-color:white;
+}
+
+/* #box0 {
+  background-color: black;
+}
+#box1 {
+  background-color: cyan;
+}
+#box2 {
+  background-color: red;
+}
+#box3 {
+  background-color:yellow;
+} */
+#pixel-board {
+  width: 250px
+} 
