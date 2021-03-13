@@ -1,0 +1,23 @@
+#color-palette section {
+  display: inline-block;
+  border: 1px black solid;
+  padding: 50px;
+}
+
+#pixel-board {
+  display: table;
+  padding: 10px;
+}
+
+#pixel-board > div {
+  display: table-row;
+  padding: 40px;
+}
+
+#pixel-board > div > .pixel {
+  display: table-cell;
+  background-color: white;
+  border: 1px black solid;
+  height: 40px;
+  width: 40px;
+}
