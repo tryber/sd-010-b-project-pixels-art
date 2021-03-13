@@ -1,0 +1,65 @@
+* {
+  
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#color-palette {
+  margin-bottom: 15px;
+}
+
+#container {
+  margin: 12px;
+}
+
+#color-palette div {
+  margin: 4px;
+}
+
+button {
+  margin: 2px;
+  width: 80px;
+  text-align: center;
+}
+
+input {
+  width: 100px;
+  text-align: center;
+}
+
+table , tr , td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color {
+  border: 1px solid black;
+  border-radius: 10%;
+  display: table-cell;
+  height: 50px;
+  width: 50px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.pixel {
+  display: table-cell;
+  table-layout: fixed;
+  border: 1px solid black;
+  height: 41px;
+  width: 41px;
+}
+
+.justifyDivs {
+  display: flex;
+  justify-content: center;
+}
