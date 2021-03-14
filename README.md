@@ -295,7 +295,7 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ### 5 - Faça com que cada elemento do quadro de pixels possua 40 pixels de largura, 40 pixels de altura e seja delimitado por uma borda preta de 1 pixel.
 
-**O que será verificado:**
+**O que será verificado:*
 
 - Verifica se o quadro de pixels tem altura e comprimento de 5 elementos
 
