@@ -1,0 +1,33 @@
+#title {
+  margin-left: 3px;
+}
+#color-palette {
+  display: inline-block;
+  width: 400px;
+  cursor:cell;
+}
+.color {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border: 1px solid black;
+}
+#pixel-board {
+  display: table;
+  border: black solid 1px;
+}
+.line {
+  display: table-row;
+}
+.pixel {
+  height: 40px;
+  width: 40px;
+  border: black solid 1px;
+  background-color: white;
+  display: table-cell;
+}
+
+#board-size {
+  border: black solid 1px;
+  width: 65px;
+}

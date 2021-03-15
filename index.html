@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Pixel Art</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Paleta de Cores</h1>
+  </header>
+  <div id="color-palette">
+    <div id="1" class="color selected" style="background-color: black;" ></div>
+    <div id="2" class="color" style="background-color: red;"></div>
+    <div id="3" class="color" style="background-color: blue;"></div>
+    <div id="4" class="color" style="background-color: green;"></div>
+  </div>
+
+  <br></br> 
+    <button id="clear-board">Limpar</button>
+    <input id="board-size" name="textinput" value="" type="text">
+    <button id="generate-board" onclick="createScreen()">VQV</button>
+  <br></br> 
+  
+
+  <div id="pixel-board"></div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
