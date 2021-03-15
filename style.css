@@ -1,0 +1,45 @@
+body {
+  position: absolute;
+}
+
+.table {
+  display: inline;
+}
+
+.table div {
+  display: inline;
+}
+
+.primeiraCor {
+  background-color: black;
+}
+
+.palette-table div div {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: solid 1px black;
+}
+
+#pixel-board {
+  display: table;
+  background-color: white;
+  margin: 15px auto;
+}
+
+.pixel {
+  min-height: 40px;
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+  background-color: white;
+  border: solid 1px black;
+}
+
+.tab {
+  display: table-row;
+}
+
+.un {
+  display: table-cell;
+}
