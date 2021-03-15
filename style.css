@@ -1,0 +1,34 @@
+ /* table .color{
+    height: 40px;
+    width: 40px;
+} */
+
+
+.color {
+    border: 1px solid black;
+    /* background-color: white; */
+    height: 20px;
+    width: 20px;
+}
+ 
+.pixel {
+    background-color: white;
+    padding: 25px;
+    height: 40px;
+    width: 40px;
+}
+
+.pixel{
+    border: 1px solid black;
+}
+
+/* 
+.pixel {
+    height: 50px;
+    width: 50px;
+} */
+
+
+/* table #pixel-board{
+   padding: 25px
+} */
