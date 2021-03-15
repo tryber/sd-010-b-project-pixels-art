@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <article id="estilizacao-principal">
+        <h3 class="nome">Arthur Menezes Correa</h3>
+    <h1 id="title">Paleta de Cores</h1>
+    <div id="color-palette">
+        <div class="color div1" onclick="pintarQuadrado('black')"></div>
+        <div class="color div2" onclick="pintarQuadrado('blue')"></div>
+        <div class="color div3" onclick="pintarQuadrado('brown')"></div>
+        <div class="color div4" onclick="pintarQuadrado('cadetblue')"></div>
+    </div>
+    <button id="clear-board" onclick="limpar()">Limpar</button>
+    <div id="definir-tamanho">
+        <input type="number" id="board-size" min="0">
+        <button id="generate-board" onclick="criarPixel()">VQV</button>
+    </div>
+    <div id="pixel-board">
+
+    </div>
+</article>
+    <script src="script.js"></script>
+</body>
+</html>
