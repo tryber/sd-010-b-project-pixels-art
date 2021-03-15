@@ -1,0 +1,24 @@
+.color {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid;
+  margin-right: 5px;
+}
+
+#pixel-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 215px;
+  height: 210px;
+  margin-top: 5px;
+}
+
+.pixel {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-right: -1px;
+  background-color: white;
+}
