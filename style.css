@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  margin-left: 10px;
+}
+
+#color-palette {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.color{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+}
+
+#color1{
+  background-color: black;
+}
+
+#color2{
+  background-color: red;
+}
+
+#color3{
+  background-color: blue;
+}
+
+#color4{
+  background-color: green;
+}
+
+.button{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.pixel {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: white;
+}
