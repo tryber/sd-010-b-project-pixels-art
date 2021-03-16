@@ -1,0 +1,17 @@
+.color {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  padding: 9px;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+li:hover {}
+
+li:active {}
