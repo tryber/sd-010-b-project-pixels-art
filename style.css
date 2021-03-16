@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color:#BABFD1 ;
+}
+
+table {
+  margin: auto;
+}
+.boxes{
+  background-color: #cccccc;
+  border: solid, 5px, #dddddd;
+}
+#clear-board{
+  background-color: #ff3c3c;
+}
+#generate-board{
+  background-color: forestgreen;
+}
+input{
+  border-color: seashell;
+  border-radius: 20px;
+}
+button{
+  border-color: seashell;
+  color: #ffffff;
+  border-radius: 20px;
+}
+nav {
+  margin: 10px;
+}
+
+tr {
+  margin: 0;
+}
+
+.color {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.black {
+  background-color: black;
+}
+
+/* .red {
+ background-color: red;  
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green{
+  background-color: green;
+} */
+
+.pixel {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
