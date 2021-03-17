@@ -1,0 +1,46 @@
+#color-palette {
+  display: flex;
+}
+
+.color {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#color1 {
+  background-color: black;
+}
+
+#color2 {
+  background-color: red;
+}
+
+#color3 {
+  background-color: blue;
+}
+
+#color4 {
+  background-color: green;
+}
+
+#pixel-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: black solid 1px;
+  background-color: white;
+}
+
+.clear-board {
+  margin-left: 80px;
+  margin-top: 20px;
+}
