@@ -89,14 +89,10 @@ const divsPixel = document.querySelectorAll('.pixel')
   });
  }
 
- const button = document.querySelector('.button')
+ const button = document.querySelector('#clear-board')
  
  button.addEventListener('click', (event) => {
   for (let index = 0; index < divsPixel.length; index += 1) {
-    divsPixel[index].id = '';
-  }
-  
- console.log("oi");
-
-   
+    divsPixel[index].id = 'white';
+  } 
  })
