@@ -1,0 +1,28 @@
+.color {
+  border: 1px solid black;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+}
+
+#black { background-color: black;}
+
+/* #red { background-color: red;}
+
+#blue { background-color: blue;}
+
+#green { background-color: green;} */
+
+.table { display: table;}
+
+.tr { display: table-row;}
+
+.td { display: table-cell;}
+
+.pixel {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixels Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Paleta de Cores</h1>
+  </header>
+  <main>
+    <section id="color-palette">
+      <div class="color selected" id="black"></div>
+      <div class="color random-bgcolor"></div>
+      <div class="color random-bgcolor"></div>
+      <div class="color random-bgcolor"></div>
+    </section>
+    <button id="clear-board">Limpar</button>
+    <input type="number" id="board-size" placeholder="Insira o tamanho do board" min="1">
+    <button id="generate-board">VQV</button>
+    <section>
+      <!-- 
+        Recorri ao seguinte site para formatar as divs como tabelas.
+        Link: https://stackoverflow.com/questions/29229523/how-and-why-to-use-display-table-cell-css  
+      -->
+      <div id="pixel-board" class="table">
+        <div class="tr">
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+        </div>
+        <div class="tr">
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+        </div>
+        <div class="tr">
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+        </div>
+        <div class="tr">
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+        </div>
+        <div class="tr">
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+          <div class="td pixel"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
