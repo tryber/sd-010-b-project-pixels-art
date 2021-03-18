@@ -1,9 +1,8 @@
-
   //cria uma div com a classe color
-  function createDivPalette() {
-  let paletteDiv = document.createElement('div');
-  paletteDiv.className = 'color'
-  return paletteDiv
+function createDivPalette() {
+ let paletteDiv = document.createElement('div');
+ paletteDiv.className = 'color'
+ return paletteDiv
 }
 //recebe uma variavel e injeta na main
 function injectMain(element) {
@@ -89,4 +88,15 @@ const divsPixel = document.querySelectorAll('.pixel')
     }
   });
  }
-//  document.getElementsByClassName('color')[0].id += ' black';
+
+ const button = document.querySelector('.button')
+ 
+ button.addEventListener('click', (event) => {
+  for (let index = 0; index < divsPixel.length; index += 1) {
+    divsPixel[index].id = '';
+  }
+  
+ console.log("oi");
+
+   
+ })
