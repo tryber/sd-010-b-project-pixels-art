@@ -1,0 +1,49 @@
+#paleta1 {
+    background-color: black;
+}
+
+#paleta2 {
+    background-color: aquamarine;
+}
+
+#paleta3 {
+    background-color: brown;
+}
+
+#paleta4 {
+    background-color: yellowgreen;
+}
+
+#color-palette #pixel-board { 
+    display: table; 
+}
+
+#pixel-board {
+    margin-top: 30px;
+}
+
+#color-palette { 
+    display: table-row; 
+}
+
+.color {  
+    display: table-cell;
+    width: 10px;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.pixel {
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 40px;
+    margin: 10px;
+    background-color: white;
+}
+
+button {
+    margin-top: 10px;
+}
