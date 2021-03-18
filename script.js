@@ -44,7 +44,7 @@ function newPixel(pixel) {
 // limpa o Board (tabuleiro)
 function clearBoard() {
   const pixels = document.querySelectorAll('.pixel');
-  pixels.forEach((el) => { el.style.backgroundColor = 'white'; });
+  pixels.forEach((e) => { e.style.backgroundColor = 'white'; });
 }
 
 // função para criar nova Board
