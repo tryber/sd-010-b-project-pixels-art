@@ -44,7 +44,7 @@ function newPixel(pixel) {
 // limpa o Board (tabuleiro)
 function clearBoard() {
   const pixels = document.querySelectorAll('.pixel');
-  pixels.forEach((x) => { x.style.backgroundColor = 'white'; });
+  pixels.forEach((elem) => { elem.style.backgroundColor = 'white'; });
 }
 
 // função para criar nova Board
@@ -52,7 +52,7 @@ function clearBoard() {
 // https://stackoverflow.com/questions/25999747/how-to-create-board-nxn-using-javascript-and-jquery
 // somando pesquisas em outras formas de realizar este script
 function createNewBoard(width) {
-  pixelBoard.style.gridTemplateColumns = `repeat(${width}, 40px)`; 
+  pixelBoard.style.gridTemplateColumns = `repeat(${width}, 40px)`;
   pixelBoard.style.gridTemplateRows = `repeat(${width}, 40px)`;
 
   for (let index = 0; index < width ** 2; index += 1) {
