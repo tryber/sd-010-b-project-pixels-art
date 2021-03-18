@@ -1,0 +1,38 @@
+.caixa {
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+  }
+
+  .caixa1 {
+    display: inline-table;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+
+  }
+  
+  .colorpixel {
+      background-color:white;
+  }
+
+  #firstbox {
+    background-color: black;
+    
+  }
+  .selected {
+    color: black;
+  }
+  #secondbox {
+    background-color:red;
+  }
+  #thirdbox {
+    background-color: blue;
+  }
+  #fourthbox {
+    background-color: green;
+  }
