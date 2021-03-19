@@ -33,12 +33,13 @@ function limpar() {
   }
 }
 
-window.onload = function aleatorio() {
-  let branco = document.getElementsByClassName('color');
+// window.onload = function aleatorio() {
+//   let branco = document.getElementsByClassName('color');
   
-  for (let key = 0; key < branco.length; key += 1) {
-    branco[key].style.background = `rgb(${Math.ceil(Math.random() * 255)},${Math.ceil(Math.random() * 255)},${Math.ceil(Math.random() * 255)})`;
-  }
-}
+
+//   for (let key = 0; key < branco.length; key += 1) {
+//     branco[key].style.background = `rgb(${Math.ceil(Math.random() * 255)},${Math.ceil(Math.random() * 255)},${Math.ceil(Math.random() * 255)})`;
+//   }
+// }
 
 //Agradeço aos plantões, Raphael Gumieri e Pedro Henrique.
