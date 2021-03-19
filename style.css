@@ -1,0 +1,58 @@
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  width: 90px;
+  height: 90px;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+.pixel {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  display: inline-block;
+  background-color: white;
+}
+
+.cor {}
+
+.preto {
+  background-color: black;
+}
+
+.vermelho {
+  background-color: red;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.verde {
+  background-color: green;
+}
+
+#pixel-board {
+  display: table;
+  width: 300px;
+}
+
+.table {
+  display: table-row;
+}
