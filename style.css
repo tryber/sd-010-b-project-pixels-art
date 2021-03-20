@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(26, 194, 194);
+}
+
+#title {
+  margin-bottom: 50px;
+}
+
+#color-palette {
+  margin-bottom: 25px;
+}
+
+.color {
+  border: 1px solid black;
+  display: inline-block; 
+  padding: 40px;
+  margin-right: 25px;
+  border-radius: 20%;
+}
+
+#pixel-board {
+  line-height: 0;
+}
+
+.pixel {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: white;
+  
+}
+
+#clear-board {
+ display: block;
+ margin-left: 47.5%;
+ margin-top: 25px;
+ margin-bottom: 30px;
+}
+
+#board-size {
+  margin-bottom: 25px;
+}
