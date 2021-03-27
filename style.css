@@ -6,6 +6,7 @@
   display: inline-block;
   cursor: pointer;
 }
+
 .pixel {
   width: 40px;
   height: 40px;
@@ -13,15 +14,8 @@
   border-style: solid;
   background-color: white;
 }
-#c1 {
-  background-color: black;
-}
-#c2 {
-  background-color: crimson;
-}
-#c3 {
-  background-color: darkgreen;
-}
-#c4 {
-  background-color: yellow;
+
+#pixel-board {
+  display: inline-block;
+  cursor: pointer;
 }
