@@ -21,8 +21,13 @@ for (let i = 1; i < cores.length; i += 1) {
 // cria a grid de pixel
 function criarGrid() {
   const tagTable = document.createElement('table'); // <table> <table/>
-  // declara a div que vamos usar
   divisaoTop.appendChild(tagTable);
+  // valida se o input é menor que 5 ou maior que 50
+  if (inputUser.value < 5) {
+    tamanhoGrid = 5;
+  } else if (inputUser.value > 50) {
+    tamanhoGrid = 50;
+  }
   for (let n = 1; n <= tamanhoGrid; n += 1) {
     const tagTR = document.createElement('tr');
     tagTable.appendChild(tagTR);
@@ -73,24 +78,14 @@ function verificaGridValeu() {
 // muda o tamanho da grid baseado no texrto inputado
 function criarGridValue() {
   tamanhoGrid = inputUser.value;
-  criarGrid();
-  pintaPixels();
-}
-// valida se o input é menor que 5 ou maior que 50
-function verificaInput() {
-  if (inputUser.value < 5) {
-    tamanhoGrid = 5;
-  } else if (inputUser.value > 50) {
-    tamanhoGrid = 50;
-  }
 }
 
 button.addEventListener('click', clearBtt);
 vqvBtt.addEventListener('click', limpaGrid);
-vqvBtt.addEventListener('click', verificaInput);
 vqvBtt.addEventListener('click', verificaGridValeu);
 vqvBtt.addEventListener('click', criarGridValue);
-
+vqvBtt.addEventListener('click', pintaPixels);
+vqvBtt.addEventListener('click', criarGrid);
 /*
 2) Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto: 'Board inválido!'
 3) Verifica se a altura do board é 5 quando um valor menor é colocado no input
