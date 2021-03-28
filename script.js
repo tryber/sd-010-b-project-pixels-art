@@ -1,8 +1,10 @@
 let tamanhoGrid = 5;
-const tamanhoColor = document.getElementsByClassName('color').length;
-const cores = document.querySelectorAll('.color');
-const pixels = document.getElementsByClassName('pixel');
-const button = document.getElementById('clear-board');
+const cores = document.querySelectorAll('.color'); // atribui um array com as divs da paleta de cores
+const pixels = document.getElementsByClassName('pixel'); // atribui um array com os pixels
+const button = document.getElementById('clear-board'); // atribui o botão de limpar
+const vqvBtt = document.getElementById('generate-board'); // atribui o botao vqv
+const divisaoTop = document.getElementById('pixel-board'); // atribui a tiv que tem a grid
+const inputUser = document.querySelector('#board-size');
 
 // definindo cores que podem ser escolhidas
 document.getElementsByClassName('color')[0].style.backgroundColor = 'rgb(0,0,0)';
@@ -13,13 +15,13 @@ function corRandom() {
 
   return `rgb(${r}, ${g}, ${b})`;
 }
-for (let i = 1; i < tamanhoColor; i += 1) {
+for (let i = 1; i < cores.length; i += 1) {
   document.getElementsByClassName('color')[i].style.backgroundColor = corRandom();
 }
 // cria a grid de pixel
 function criarGrid() {
   const tagTable = document.createElement('table'); // <table> <table/>
-  const divisaoTop = document.getElementById('pixel-board'); // declara a div que vamos usar
+  // declara a div que vamos usar
   divisaoTop.appendChild(tagTable);
   for (let n = 1; n <= tamanhoGrid; n += 1) {
     const tagTR = document.createElement('tr');
@@ -41,20 +43,49 @@ for (let i = 0; i < cores.length; i += 1) {
   cores[i].addEventListener('click', selecionaCor);
 }
 // printa a grid
+function pintaPixels() {
 for (let i = 0; i < pixels.length; i += 1) {
   pixels[i].addEventListener('click', () => {
     const corNova = document.getElementsByClassName('selected')[0].style.backgroundColor;
     pixels[i].style.backgroundColor = corNova;
   });
 }
-// limpa grid
+}
+pintaPixels();
+// limpa cor grid
 function clearBtt() {
   for (let i = 0; i < pixels.length; i += 1) {
     document.getElementsByClassName('pixel')[i].style.backgroundColor = 'rgb(255,255,255)';
   }
 }
 
+// limpar grid da grid
+function limpaGrid() {
+  divisaoTop.innerHTML = '';
+}
+// muda o tamanho da grid baseado no texrto inputado
+function criarGridValue() {
+  tamanhoGrid = inputUser.value;
+  criarGrid();
+}
+// verificar valor da grid
+function verificaGridValeu() {
+  if (inputUser.value === '') {
+    alert('Board inválido!');
+  }
+}
+function verificaInput() {
+  if (inputUser.value < 5) {
+    tamanhoGrid = 5;
+  } else if (inputUser.value > 50) {
+    tamanhoGrid = 50;
+  }
+}
+
 
 button.addEventListener('click', clearBtt);
-// vqvBtt.addEventListener('click', addPixel);
-// vqvBtt.addEventListener('click', criarGrid);
+vqvBtt.addEventListener('click', limpaGrid);
+vqvBtt.addEventListener('click', verificaInput);
+vqvBtt.addEventListener('click', verificaGridValeu);
+
+vqvBtt.addEventListener('click', criarGridValue);
