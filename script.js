@@ -44,12 +44,12 @@ for (let i = 0; i < cores.length; i += 1) {
 }
 // printa a grid
 function pintaPixels() {
-for (let i = 0; i < pixels.length; i += 1) {
-  pixels[i].addEventListener('click', () => {
-    const corNova = document.getElementsByClassName('selected')[0].style.backgroundColor;
-    pixels[i].style.backgroundColor = corNova;
-  });
-}
+  for (let i = 0; i < pixels.length; i += 1) {
+    pixels[i].addEventListener('click', () => {
+      const corNova = document.getElementsByClassName('selected')[0].style.backgroundColor;
+      pixels[i].style.backgroundColor = corNova;
+    });
+  }
 }
 pintaPixels();
 // limpa cor grid
@@ -67,13 +67,15 @@ function limpaGrid() {
 function criarGridValue() {
   tamanhoGrid = inputUser.value;
   criarGrid();
+  pintaPixels();
 }
 // verificar valor da grid
 function verificaGridValeu() {
-  if (inputUser.value === '') {
+  if (inputUser.value == '') {
     alert('Board inválido!');
   }
 }
+// valida se o input é menor que 5 ou maior que 50
 function verificaInput() {
   if (inputUser.value < 5) {
     tamanhoGrid = 5;
@@ -82,10 +84,15 @@ function verificaInput() {
   }
 }
 
-
 button.addEventListener('click', clearBtt);
 vqvBtt.addEventListener('click', limpaGrid);
 vqvBtt.addEventListener('click', verificaInput);
 vqvBtt.addEventListener('click', verificaGridValeu);
-
 vqvBtt.addEventListener('click', criarGridValue);
+
+/*
+1) X Verifica se o input só aceita número maiores que zero. Essa restrição deve ser feita usando os atributos do elemento `input` X
+2) Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto: 'Board inválido!'
+3) Verifica se a altura do board é 5 quando um valor menor é colocado no input
+4) Verifica se a altura do board é 50 quando um valor maior é colocado no input
+*/
