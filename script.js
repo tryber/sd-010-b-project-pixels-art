@@ -63,17 +63,18 @@ function clearBtt() {
 function limpaGrid() {
   divisaoTop.innerHTML = '';
 }
-// muda o tamanho da grid baseado no texrto inputado
-function criarGridValue() {
-  tamanhoGrid = inputUser.value;
-  criarGrid();
-  pintaPixels();
-}
+
 // verificar valor da grid
 function verificaGridValeu() {
   if (inputUser.value == '') {
     alert('Board inválido!');
   }
+}
+// muda o tamanho da grid baseado no texrto inputado
+function criarGridValue() {
+  tamanhoGrid = inputUser.value;
+  criarGrid();
+  pintaPixels();
 }
 // valida se o input é menor que 5 ou maior que 50
 function verificaInput() {
@@ -91,7 +92,6 @@ vqvBtt.addEventListener('click', verificaGridValeu);
 vqvBtt.addEventListener('click', criarGridValue);
 
 /*
-1) X Verifica se o input só aceita número maiores que zero. Essa restrição deve ser feita usando os atributos do elemento `input` X
 2) Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto: 'Board inválido!'
 3) Verifica se a altura do board é 5 quando um valor menor é colocado no input
 4) Verifica se a altura do board é 50 quando um valor maior é colocado no input
