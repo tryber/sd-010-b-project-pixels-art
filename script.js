@@ -81,13 +81,11 @@ function criarGridValue() {
 }
 
 button.addEventListener('click', clearBtt);
-vqvBtt.addEventListener('click', limpaGrid);
 vqvBtt.addEventListener('click', verificaGridValeu);
+vqvBtt.addEventListener('click', limpaGrid);
 vqvBtt.addEventListener('click', criarGridValue);
 vqvBtt.addEventListener('click', pintaPixels);
 vqvBtt.addEventListener('click', criarGrid);
 /*
-2) Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto: 'Board inválido!'
-3) Verifica se a altura do board é 5 quando um valor menor é colocado no input
-4) Verifica se a altura do board é 50 quando um valor maior é colocado no input
+1) Verifica se nenhum valor for colocado no input ao clicar no botão, um `alert` é exibido com o texto: 'Board inválido!'
 */
