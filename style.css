@@ -1,0 +1,20 @@
+.color {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  border-style: solid;
+  background-color: white;
+}
+
+#pixel-board {
+  display: inline-block;
+  cursor: pointer;
+}
