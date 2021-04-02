@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+#color-palette {
+  margin: auto;
+  margin-top: 60px;
+}
+
+.color {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+#botão {
+  margin-top: 20px;
+}
+  
+#clear-board {
+  border-radius: 5px;
+  background-color: #c4c4ba;
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  color: #1f743c;
+}
+  
+#pixel-board {
+  margin: auto;
+  margin-top: 20px;
+}
+  
+.pixel {
+  margin: auto;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+} 
