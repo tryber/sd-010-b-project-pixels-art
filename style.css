@@ -1,0 +1,27 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(238, 235, 235);
+}
+
+.color {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.pixel {
+  border: 1px solid black;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0.8px;
+  background-color: white;
+}
+
+#pixel-board {
+  margin-top: 20px;
+}
