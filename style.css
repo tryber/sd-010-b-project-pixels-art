@@ -1,8 +1,6 @@
 body {
-  /* margin-left: 50px; */
   background-color: rgb(234, 226, 183);
-  font-family: 'Rubik', sans-serif;
-  /* width: 50%; */
+  font-family: Rubik, sans-serif;
 }
 
 #title {
@@ -15,7 +13,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 48, 73);
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -31,7 +29,7 @@ body {
   width: 50px;
   height: 50px;
   display: flex;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
   border-radius: 8px;
 }
 
@@ -51,11 +49,11 @@ table {
   border-collapse: collapse;
 }
 
-button, input {
+button , input {
   border: none;
   border-radius: 8px;
   color: white;
-  padding: 8px 8px;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -63,9 +61,7 @@ button, input {
 }
 
 #clear-board {
-  background-color: rgb(214, 40, 40); /* Green */
-  
-  /* margin-right: ; */
+  background-color: rgb(214, 40, 40);
 }
 
 
@@ -77,10 +73,6 @@ button, input {
 
 #board-size {
   color: black;
-  /* align: right; */
-  /* display: inline-block; */
   margin-left: 115px;
-  /* margin-right: 5px; */
-  /* float: right; */
   width: 50px;
 }

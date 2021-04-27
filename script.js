@@ -1,13 +1,14 @@
-let colorItems = document.querySelectorAll('.color'); // color palette
-let pixelBoard = document.querySelector('#pixel-board'); // this gets the whole board
-let colorPalette = document.querySelector('#color-palette'); // get the color-palette section
+const colorItems = document.querySelectorAll('.color'); // color palette
+const pixelBoard = document.querySelector('#pixel-board'); // this gets the whole board
+const colorPalette = document.querySelector('#color-palette'); // get the color-palette section
 const clearButton = document.querySelector('#clear-board'); // gets Limpar button
 const vqvButton = document.querySelector('#generate-board'); // gets VQV button
+// import event from "event-module";
 
 function randomRGB() {
-  r = Math.ceil(Math.random() * 256);
-  g = Math.ceil(Math.random() * 256);
-  b = Math.ceil(Math.random() * 256);
+  const r = Math.ceil(Math.random() * 256);
+  const g = Math.ceil(Math.random() * 256);
+  const b = Math.ceil(Math.random() * 256);
 
   return [r, g, b];
 }
@@ -15,16 +16,23 @@ function randomRGB() {
 // set colorItems, from colorsList, to color palette
 function buttonColor() {
   colorItems[0].style.backgroundColor = 'black';
-  for (let i = 1; i < colorItems.length; i++) {
-    let rgb = randomRGB();
+  for (let i = 1; i < colorItems.length; i += 1) {
+    const rgb = randomRGB();
     colorItems[i].style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
   }
 }
 
+// Paints the single pixel selected
+// I found this logic on Gustavo Cerqueira's project: @gmcerqueira
+function paintPixel() {
+  const pencil = document.querySelector('.selected').style.backgroundColor; // gets background color style from selected color
+  this.style.backgroundColor = pencil;
+}
+
 // creates a single pixel
 function createPixel(rowNumber) {
-  let pixel = document.createElement('td');
-  let row = document.querySelectorAll(`#pixel-board>tr`);
+  const pixel = document.createElement('td');
+  const row = document.querySelectorAll('#pixel-board>tr');
   pixel.className = 'pixel';
   pixel.addEventListener('click', paintPixel); // I  this solution at Gustavo Cerqueira's Project: @gmcerqueira
   row[rowNumber].appendChild(pixel);
@@ -32,9 +40,9 @@ function createPixel(rowNumber) {
 
 // creates a row of pixels
 function createRow(rowNumber, colNumber) {
-  let row = document.createElement('tr');
+  const row = document.createElement('tr');
   pixelBoard.appendChild(row);
-  for (let i = 0; i < colNumber; i++) {
+  for (let i = 0; i < colNumber; i += 1) {
     createPixel(rowNumber);
   }
 }
@@ -42,14 +50,14 @@ function createRow(rowNumber, colNumber) {
 // creates the pixel board
 function createBoard(boardSize) {
   pixelBoard.innerHTML = '';
-  for (let i = 0; i < boardSize; i++) {
+  for (let i = 0; i < boardSize; i += 1) {
     createRow(i, boardSize);
   }
 }
 
 // sets the board to the size the user wants
 function setBoardSize() {
-  vqvButton.addEventListener('click', function () {
+  vqvButton.addEventListener('click', () => {
     const boardSize = document.querySelector('#board-size').value;
     if (boardSize === '') {
       alert('Board inválido!');
@@ -73,41 +81,31 @@ function setDefaultColor() {
 
 // selects the color to paint pixels
 function changeColorPencil() {
-  for (let i = 0; i < colorItems.length; i++) {
-    colorItems[i].addEventListener('click', function () {
-      for (let i = 0; i < colorItems.length; i++) {
-        colorItems[i].classList.remove('selected');
+  for (let i = 0; i < colorItems.length; i += 1) {
+    colorItems[i].addEventListener('click', (event) => {
+      for (let j = 0; j < colorItems.length; j += 1) {
+        colorItems[j].classList.remove('selected');
       }
-      let clicked = event.target;
-      clicked.classList.add('selected');
+      event.target.classList.add('selected');
     });
   }
 }
 
-// Paints the single pixel selected
-// I found this logic on Gustavo Cerqueira's project: @gmcerqueira
-function paintPixel() {
-  let pencil = document.querySelector('.selected').style.backgroundColor; // gets background color style from selected color
-  this.style.backgroundColor = pencil;
-}
-
 // clears all painted pixels
 function clearBoard() {
-  clearButton.addEventListener('click', function () {
-    const pixels = document.querySelectorAll('.pixel'); //gets all pixels
-    for (let i = 0; i < pixels.length; i++) {
-      // pixels[i].style.backgroundColor = 'white';
+  clearButton.addEventListener('click', () => {
+    const pixels = document.querySelectorAll('.pixel'); // gets all pixels
+    for (let i = 0; i < pixels.length; i += 1) {
       pixels[i].style = '';
     }
   });
 }
 
-window.onload = function () {
+window.onload = () => {
   buttonColor();
   createBoard(5);
   setBoardSize();
   setDefaultColor();
   changeColorPencil();
-  paintPixel;
   clearBoard();
-}
+};
