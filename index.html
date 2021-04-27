@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pixels Art</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1 id="title">Paleta de Cores</h1>
+
+	<section id="color-palette">
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+	</section>
+
+	<section id="input-and-but">
+		<button id="clear-board" type="reset">Limpar</button>
+		<!-- this min attribute I took from https://stackoverflow.com/questions/7372067/is-there-any-way-to-prevent-input-type-number-getting-negative-values -->
+		<input id="board-size" type="number" name="numb" min="1">
+		<button id="generate-board" type="submit">VQV</button>
+	</section>
+
+	<section>
+		<table id="pixel-board"></table>
+	</section>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
