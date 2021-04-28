@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Pixels Art</title>
+</head>
+<body>
+    <h1 id="title">Paleta de Cores</h1>
+    <div id="color-palette">
+        <div class="color selected" id="colorBlack"></div>
+        <div class="color" id="color1"></div>
+        <div class="color" id="color2"></div>
+        <div class="color" id="color3"></div>
+    </div>
+    <div class="btn-clear">
+
+    </div>
+    <div class="numberPixel">
+        <p>Defina a quantidade  de pixels: </p>
+        <input id="board-size" type="number" min="1" max="50" pattern='\d+' placeholder="5 a 50" value="5">
+        <button id="generate-board" onclick="generatePixel()">VQV</button>
+    </div>
+
+    <div class="container">
+        <div id="pixel-board"></div>
+    </div>
+ 
+<script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

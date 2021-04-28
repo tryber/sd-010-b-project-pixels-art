@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+  text-align: center;
+  background-color: #87c1dc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+}
+
+#pixel-board {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+  /* width: 251px;
+  margin: 20px;  */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#color-palette {
+display: flex;
+justify-content: center;
+}
+
+.btn-clear{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+#clear-board {
+  font-size: 19px;
+  background-color: transparent;
+  border: solid 1px #ff0505;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 2px red;
+  width: 5%;
+  padding: 4px;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+}
+
+#clear-board:hover { 
+  font-size: 20px;
+}
+
+.numberPixel input {
+  width: 6%;
+  padding: 4px;
+  border-radius: 15px;
+}
+
+#generate-board{
+  font-size: 18px;
+  background-color: #2fc18c;
+  border: 2px solid  #036b52;
+  box-shadow: 3px 3px 3px #036b52;
+  border-radius: 15px;
+  width: 4%;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
+}
+
+.color {
+  display: inline-block;
+  margin: 2px;
+  border: solid black 1px;
+  width: 40px;
+  height: 40px;
+}
+
+.pixel {
+  display: inline-block;
+  border: solid black 1px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -4px;
+}
+
+#colorBlack {
+  background-color: black;
+}
+
+#color1 {
+  background-color: blueviolet;
+}
+
+#color2 {
+  background-color: yellow;
+}
+
+#color3 {
+  background-color: teal;
+}
+
+.colorBlack {
+  background-color: black;
+}
+
+.color1 {
+  background-color: blueviolet;
+}
+
+.color2 {
+  background-color: yellow;
+}
+
+.color3 {
+  background-color: teal;
+}
+
+.color4 {
+  background-color: white;
+}
